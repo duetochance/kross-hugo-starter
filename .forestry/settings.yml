@@ -4,18 +4,26 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: ita
+- type: directory
+  path: content/posts
+  label: Post
+  create: all
+  match: "**/*"
+  new_doc_ext: it.md
+  templates:
+  - post
+- type: heading
+  label: eng
 - type: directory
   path: content/posts
   label: Posts
   create: all
   match: "**/*"
-  new_doc_ext: ".eng.md"
+  new_doc_ext: end.md
   templates:
   - post
-- type: heading
-  label: ita
-- type: heading
-  label: eng
 - type: directory
   path: content/home
   label: Home
@@ -26,14 +34,6 @@ sections:
   label: Guides
   create: all
   match: "**/*"
-- type: directory
-  path: content/posts
-  label: Post
-  create: all
-  match: "**/*"
-  new_doc_ext: ".it.md"
-  templates:
-  - post
 - type: directory
   path: content/about
   label: About
