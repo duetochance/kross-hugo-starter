@@ -11,7 +11,7 @@ sections:
   label: Posts
   create: all
   match: "**/*"
-  new_doc_ext: ".ita.md"
+  new_doc_ext: ita.md
   templates:
   - post
 - type: heading
