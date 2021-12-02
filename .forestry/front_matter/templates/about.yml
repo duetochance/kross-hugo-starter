@@ -12,7 +12,7 @@ fields:
   name: description
   label: description
 - type: file
-  name: author_image
+  name: index_jpg
   label: author_image
 - type: file
   name: author_signature
