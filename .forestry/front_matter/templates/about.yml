@@ -17,3 +17,8 @@ fields:
 - type: file
   name: author_signature
   label: author_signature
+- name: toggle_dark
+  type: boolean
+  label: Toggle dark
+  description: Toggle dark mode on/off
+  default: false
