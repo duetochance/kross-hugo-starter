@@ -7,21 +7,21 @@ sections:
 - type: heading
   label: ita
 - type: directory
-  path: content/posts
-  label: Post
+  path: content/posts-it
+  label: Posts
   create: all
   match: "**/*"
-  new_doc_ext: it.md
+  new_doc_ext: ".ita.md"
   templates:
   - post
 - type: heading
   label: eng
 - type: directory
-  path: content/posts
+  path: content/posts-en
   label: Posts
   create: all
   match: "**/*"
-  new_doc_ext: end.md
+  new_doc_ext: en.md
   templates:
   - post
 - type: directory
